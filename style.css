@@ -1,0 +1,13 @@
+:root{
+    --primary-color: #0D47A1;
+    --bg-color: #008053;
+    --accent-yellow: #CDDC39;
+    --accent-gold: #F4B410;
+    --footer-color: #37474F;
+    --secondary-color: #1B2C57;
+}
+
+header{
+    background-color: var(--bg-color);
+    width: screen;
+}
