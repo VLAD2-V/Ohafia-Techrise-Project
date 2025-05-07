@@ -75,7 +75,6 @@ input{
 .password-wrapper .toggle-password {
   position: absolute;
   height: 40px;
-  /* border: 1px solid red; */
   right: 5px;
   top: 50%;
   z-index: 1000;
@@ -206,7 +205,6 @@ header {
   top: 40%;
   transform: translateY(-50%);
   cursor: pointer;
-  border: 1px solid red; 
 }
 
 .radio-group, .checkbox-group {
