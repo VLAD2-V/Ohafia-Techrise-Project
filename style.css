@@ -17,7 +17,7 @@ header {
   box-sizing: border-box;
 }
 
-body {
+.form-section {
   font-family: Arial, sans-serif;
   background: linear-gradient(rgba(27, 44, 87, 0.5)),
     url(./images/Procrastination.gif);
@@ -120,5 +120,170 @@ input{
 
   .signin-btn {
     font-size: 16px;
+  }
+}
+/* CREATEACCOUNT CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--bg-color);
+  width: screen;
+}
+
+.form-sectionRegister{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(27, 44, 87, 0.5)),
+    url(./images/Procrastination.gif);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(0, 128, 0, 0.7);
+  color: white;
+  font-size: 16px;
+}
+.show-password{
+  position: absolute;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+  z-index: 1000;
+}
+.input-icon {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: 1px solid red; 
+}
+
+.radio-group, .checkbox-group {
+  margin-bottom: 15px;
+}
+.techcredit-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  
+}
+.radio-group p{
+  margin-top: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+
+} 
+.radio-group div,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: normal;
+margin-top: 5%;
+}
+
+.dropdown-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.dropdown-group > div {
+  flex: 1 1 45%;
+}
+
+.signup {
+  width: 100%;
+  padding: 12px;
+  background-color: #012e50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signup:hover {
+  background-color: #011f35;
+}
+
+.signin {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signin a {
+  margin-left: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .dropdown-group {
+    flex-direction: column;
+  }
+
+  .dropdown-group > div {
+    flex: 1 1 100%;
   }
 }

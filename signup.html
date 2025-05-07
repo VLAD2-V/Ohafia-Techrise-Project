@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form-sectionRegister">
+      <form class="signup-form">
+        <h2>Create New Account</h2>
+
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="First Name" required />
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="Last Name" required />
+
+        <label for="email">Email/Phone Number</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email/Phone Number"
+          required
+        />
+
+        <label for="password">Create Password</label>
+        <div class="input-icon">
+          <input
+            type="password"
+            id="password"
+            class="password-input"
+            placeholder="Create Password"
+            required
+          />
+          <!-- <span class="toggle-password">&#128065;</span> -->
+          
+        </div>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <div class="input-icon">
+          <input
+            type="password"
+            id="ConfirmPassword"
+            class="password-input"
+            placeholder="Confirm Password"
+            required
+          />
+          <!-- <span class="toggle-password">&#128065;</span> -->
+          <!-- <i class="fas fa-eye toggle-password" id="togglePassword"></i> -->
+        </div>
+        <div class="show-password">
+          Show Password
+          <i class="fas fa-eye" id="togglePassword"></i>
+        </div>
+
+        <div class="radio-group">
+          <p>Account Type</p>
+          <div>
+            <label
+              ><input
+                type="radio"
+                name="accountType"
+                value="student"
+                required
+              />
+              I'm a Student</label
+            >
+            <label
+              ><input type="radio" name="accountType" value="employer" /> I'm an
+              Employer</label
+            >
+          </div>
+        </div>
+
+        <div class="dropdown-group">
+          <div>
+            <label for="state">State of Origin</label>
+            <select id="state">
+              <option value="">Select State</option>
+              <option value="">Abia State
+            </select>
+          </div>
+          <div>
+            <label for="lga">LGA</label>
+            <select id="lga">
+              <option value="">Select LGA</option>
+              <option value="">Aba North</option>
+              <option value="">Aba South</option>
+              <option value="">Arochukwu</option>
+              <option value="">Bende</option>
+              <option value="">Ikwuano</option>
+              <option value="">Isiala Ngwa North</option>
+              <option value="">Isiala Ngwa South</option>
+              <option value="">Isuikwuato</option>
+              <option value="">Obi Ngwa</option>
+              <option value="">Ohafia</option>
+              <option value="">Osisioma Ngwa</option>
+              <option value="">Ugwunagbo</option>
+              <option value="">Ukwa East</option>
+              <option value="">Ukwa West</option>
+              <option value="">Umuahia North</option>
+              <option value="">Umuahia South</option>
+              <option value="">Umuahia</option>
+            </select>
+          </div>
+        </div>
+        <div class="techcredit-group">
+          <p>
+            How did you hear about TechCredit?
+          </p>
+        </div>
+
+        <div class="checkbox-group">
+          <label><input type="checkbox" /> School</label>
+          <label><input type="checkbox" /> Government Official</label>
+          <label><input type="checkbox" /> Social Media</label>
+          <label><input type="checkbox" /> Friend/family</label>
+          <label><input type="checkbox" /> Other</label>
+        </div>
+
+        <button type="submit-btn" class="signup">Sign Up</button>
+
+        <div class="signin">
+          <span>Have an account?</span>
+          <a href="#">Sign In</a>
+        </div>
+      </form>
+    </div>
+    <script>
+      const togglePassword = document.getElementById("togglePassword");
+      const passwordInput = document.getElementsByClassName("password-input")[0];
+      const confirmPasswordInput = document.getElementsByClassName(
+        "password-input"
+      )[1];
+
+      togglePassword.addEventListener("click", function () {
+        const type =
+          passwordInput.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+        passwordInput.setAttribute("type", type);
+
+        const type2 =
+          confirmPasswordInput.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+        confirmPasswordInput.setAttribute("type", type2);
+        // Toggle icon class (optional - if you're switching between eye and eye-slash)
+        this.classList.toggle("fa-eye");
+        this.classList.toggle("fa-eye-slash");
+      });
+    </script>
+  </body>
+</html>
