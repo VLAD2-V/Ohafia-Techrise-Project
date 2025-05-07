@@ -7,9 +7,15 @@
   --secondary-color: rgb(27, 44, 87);
 }
 
+<<<<<<< HEAD
 header {
   background-color: var(--bg-color);
   width: screen;
+=======
+header{
+    background-color: var(--bg-color);
+    width: screen;
+>>>>>>> e7b795196c366de750d77ff0e9e88db14a326747
 }
 * {
   margin: 0;
