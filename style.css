@@ -4,7 +4,7 @@
     --accent-yellow: #CDDC39;
     --accent-gold: #F4B410;
     --footer-color: #37474F;
-    --secondary-color: rgb(27, 44, 87);
+    --secondary-color: #1B2C57;
     --grey-color:#f5f5f5;
 }
 body{
@@ -12,43 +12,9 @@ body{
     font-family: system-ui, sans-serif;
     background-color: white;
     color: black;
-}* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-.navbar{
+}
+header{
     background-color: var(--bg-color);
-    width: 110vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    position: fixed;
-    z-index: 10000;
-    top: 0;
- }
- .ancodiv{
-    /* border: 1px solid red; */
-    width: 50vw;
-    align-items: center;
-    justify-content: space-between;
-    /* display: flex; */
-    
-}
-.ancodiv a{
-    padding: 10px 20px;
-    text-decoration: none;
-    justify-content: space-between;
-    color: white;
-    border-radius: 10px;
-}
-.ancodiv a:hover{
-    background-color: white;
-    color: #008053;
-} 
-.main{
-    background: linear-gradient(rgba(27,44,87, 0.5)), url(images/istockphoto-1387051560-612x612\ 1.png);
     width: screen;
 }
 .about{
@@ -71,9 +37,10 @@ body{
 .container{
     /*  8  border: 1px solid green; */  
     width: screen;
+    height: 70vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     background-color: var(--grey-color);
     position: relative;
@@ -232,12 +199,15 @@ body{
     display: grid;
     place-items: center;
     width: 200px;
-    height: 40px;
+    height: 60px;
     text-decoration: none;
     color: #fff;
     border-radius: 20px;
 
 
+ }
+ .btn b{
+    z-index: 10;
  }
 
  .btn1{
@@ -247,7 +217,7 @@ body{
  }
  .btn1 span{
     width: 0%;
-    height: 40px;
+    height: 60px;
     background-color: rgba(27,44,87, 0.5);
     position: absolute;
     /* transition: 0.5s; */
@@ -275,7 +245,7 @@ body{
  }
  .btn2 span{
     width: 0%;
-    height: 40px;
+    height: 60px;
     background-color: rgba(27,44,87, 0.5);
     position: absolute;
     /* transition: 0.5s; */
