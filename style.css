@@ -133,6 +133,7 @@ header{
     justify-content: space-between;
     /* display: flex; */
     
+    
 }
 .ancodiv a{
     padding: 10px 20px;
@@ -140,6 +141,8 @@ header{
     justify-content: space-between;
     color: white;
     border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .ancodiv a:hover{
     background-color: white;
@@ -452,7 +455,7 @@ header {
   color: white;
   font-size: 18px;
   margin-top: 5px;
-  z-index: 1000;
+  left: 55%;
 }
 .input-icon {
   position: relative;
